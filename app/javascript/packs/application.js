@@ -15,7 +15,10 @@ import "bootstrap"
 //= require jquery_ujs 
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require underscore
+//= require gmaps/google    
 //= require_tree .
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

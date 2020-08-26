@@ -16,12 +16,17 @@
                 <%= link_to "https://www.instagram.com/kids_klub_nsk/", class: "btn btn-block btn-social btn-instagram", id: 'social' do %>
                     <span class="fa fa-instagram"></span> Мы в Instagram!
                 <% end %>
-                TODO: Google Map point
+                <%= render 'map' %>
+
             </div>
-            <div class="col-sm-4">
-            <p style="font-size: 25px;">Запишитесь на пробное занятие!</p>
+
+            <div class="col-sm-4" style="margin-top: 120px;">
+                
+                <p style="font-size: 25px;">Запишитесь на пробное занятие!</p>
                <%= render 'requests/form'%>
+               
             </div>
+
         </div>  
     </div>
 </div>
