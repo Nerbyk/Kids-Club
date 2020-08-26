@@ -12,7 +12,9 @@ gem 'bootsnap',   '1.4.6', require: false
 gem 'bootstrap-sass', '3.4.1'
 gem 'font-awesome-rails'
 gem 'bootstrap-social-rails'
-gem 'telegram-bot'
+gem 'telegram-bot-types'
+
+
 
 
 
