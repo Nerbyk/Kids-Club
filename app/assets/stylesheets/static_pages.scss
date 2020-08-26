@@ -4,6 +4,8 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+@import 'bootstrap-social';
 
 /* universal */
 
@@ -87,6 +89,18 @@ header {
     }
 }
 
+/* footer */ 
+footer {
+    font-size: 15px;
+    p { 
+        margin-top: -55px; 
+        color: grey;
+    }
+    
+}
+
+
+
 .logo-image{
     max-width: 25%;
     border-radius: 50%;
@@ -136,26 +150,21 @@ header {
     }
 }
 
-#application-home {
-    background: #08ADE5; 
-    h2 {
-        margin-top: 15px;
-            font-size: 25px;
-            color: white;
-    }
+
+
+#application-button {
+    margin: 40px 20px;
+    float: right;
 }
 
-// .banana {
-//     @include make-col-ready;
-//     @include media-breakpoint-up(sm) {
-//       @include make-col(6);
-//     }
-//     @include media-breakpoint-up(md) {
-//       @include make-col(4);
-//     }
-//     p {
-//       font-size: 3rem;
-//       color: yellow;
-//       font-weight: 600;
-//     }
-//   }
+#request-new {
+    background: #B44087;
+    color: white;
+    p {
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+    #social{
+            width: 450px;   
+    }
+}

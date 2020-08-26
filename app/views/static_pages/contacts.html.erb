@@ -1,2 +1,23 @@
-<h1>StaticPages#contacts</h1>
-<p>Find me in app/views/static_pages/contacts.html.erb</p>
+<div class="jumbotron", id="request-new">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>Контакты</h1>
+                <p>Наш адрес:</p>
+                <p>г. Новокуйбышевск пр.Победы 38а</p>
+                <p>Tел +7 967 762 66 63 и +7 927 604 50 50</p>
+                 <p>Часы работы: </p>
+                <%= link_to "https://vk.com/kids_klub_nsk", class: "btn btn-block btn-social btn-vk", id: 'social' do %>
+                    <span class="fa fa-vk"></span> Мы в ВКонтакте!
+                <% end %>
+                <%= link_to "#", class: "btn btn-block btn-social btn-instagram", id: 'social' do %>
+                    <span class="fa fa-instagram"></span> Мы в Instagram!
+                <% end %>
+               
+            </div>
+            <div class="col-sm-4">
+                TODO: Application layout
+            </div>
+        </div>
+    </div>
+</div>
