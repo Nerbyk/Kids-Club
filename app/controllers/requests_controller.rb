@@ -7,6 +7,8 @@ class RequestsController < ApplicationController
     @request = Request.new(request_params)
     if @request.save 
       flash[:info] = "Заявка была отправлена"
+      send_to_telegram
+      redirect_to root_path
     else  
       render 'new'
     end
@@ -16,5 +18,10 @@ class RequestsController < ApplicationController
 
   def request_params 
     params.require(:request).permit(:name, :phone, :email, :text)
+  end
+
+  def send_to_telegram
+    message = generate_message(request_params)
+    Telegram.bot.send_message(chat_id: ENV['TELEGRAM_RECEIVER_ID'], text: message)
   end
 end
