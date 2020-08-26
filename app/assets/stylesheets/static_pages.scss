@@ -1,0 +1,161 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+    padding-top: 20px;
+}
+
+section {
+    overflow: auto; 
+}
+
+textarea {
+    resize: vertical;
+}
+
+.center{
+    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
+}
+
+/* typography */ 
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.2em;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: $gray-light;
+}
+h3 {
+    width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+}
+h3 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+}
+
+/* header */
+
+header {
+    margin-top: 20px;
+    ul { 
+        float: right;
+        list-style: none;
+        li {
+            font-size: 18px;
+            float: left;
+            margin-left: 15px;
+        }
+    }
+    a {
+        color: grey;
+        
+        &:hover {
+            color: lightseagreen;
+            text-decoration: none;
+            
+        }
+        
+    }
+}
+
+.logo-image{
+    max-width: 25%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.header-number {
+    float: left;
+}
+
+#home-jumbotron {
+    margin-top: 25px;
+    font-family: Verdana, Geneva, sans-serif;   
+    background: #85C226;
+        h2 {
+            margin-top: 15px;
+            font-size: 25px;
+            color: white;
+            
+        }
+        p {
+            color: white;
+        }
+    
+}
+
+#home-grid {
+    text-align: center;
+    background: white;
+    img {
+        padding: 15px 10px;
+        object-fit: cover;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+    a {
+        color: black; 
+        font-size: 18px;
+        &:hover{
+            color: lightseagreen;
+            text-decoration: none;
+        }
+    }
+}
+
+#application-home {
+    background: #08ADE5; 
+    h2 {
+        margin-top: 15px;
+            font-size: 25px;
+            color: white;
+    }
+}
+
+// .banana {
+//     @include make-col-ready;
+//     @include media-breakpoint-up(sm) {
+//       @include make-col(6);
+//     }
+//     @include media-breakpoint-up(md) {
+//       @include make-col(4);
+//     }
+//     p {
+//       font-size: 3rem;
+//       color: yellow;
+//       font-weight: 600;
+//     }
+//   }
