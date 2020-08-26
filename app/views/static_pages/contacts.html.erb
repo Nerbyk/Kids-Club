@@ -1,5 +1,8 @@
+
 <div class="jumbotron", id="request-new">
+
     <div class="container"> 
+    <hr>
         <div class="row">
             <div class="col-sm-8">
                 <h1>Контакты</h1>
@@ -10,14 +13,15 @@
                 <%= link_to "https://vk.com/kids_klub_nsk", class: "btn btn-block btn-social btn-vk", id: 'social' do %>
                     <span class="fa fa-vk"></span> Мы в ВКонтакте!
                 <% end %>
-                <%= link_to "#", class: "btn btn-block btn-social btn-instagram", id: 'social' do %>
+                <%= link_to "https://www.instagram.com/kids_klub_nsk/", class: "btn btn-block btn-social btn-instagram", id: 'social' do %>
                     <span class="fa fa-instagram"></span> Мы в Instagram!
                 <% end %>
-               
+                TODO: Google Map point
             </div>
             <div class="col-sm-4">
-                TODO: Application layout
+            <p style="font-size: 25px;">Запишитесь на пробное занятие!</p>
+               <%= render 'requests/form'%>
             </div>
-        </div>
+        </div>  
     </div>
 </div>

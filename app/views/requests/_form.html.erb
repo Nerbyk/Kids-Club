@@ -1,0 +1,18 @@
+<%= form_with(model: @request, local: true) do |f| %>
+          <%= render 'shared/error_messages' %>
+         
+         <%= f.label :Ваше_имя %>
+         <%= f.text_field :name, class: 'form-control' %>
+
+        <%= f.label :Телефон %>
+        <%= f.telephone_field :phone, class: 'form-control'%>
+
+        <%= f.label :Эл_адрес %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :Интересующий_курс_и_возраст %>
+        <%= f.text_field :text, class: 'form-control', rows: 50 %>
+        <h2>Пожалуйста, укажите возраст ребёнка и какие занятия вас интересуют.</h2>
+        
+        <%= f.submit "Записаться", class: "btn btn-primary" %>        
+<% end %>
