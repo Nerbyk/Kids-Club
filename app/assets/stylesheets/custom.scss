@@ -17,6 +17,7 @@
 
 body {
     padding-top: 20px;
+    font-family: "Comic Sans", cursive, sans-serif;
 }
 
 section {
@@ -38,6 +39,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
     line-height: 1;
+    
 }
 
 h1 {
@@ -74,15 +76,7 @@ p {
 
 // header {
     // margin-top: 20px;
-    ul { 
-        float: right;
-        list-style: none;
-        li {
-            font-size: 18px;
-            float: left;
-            margin-left: 15px;
-        }
-    }
+    
     a {
         color: grey;
         
@@ -132,7 +126,6 @@ footer {
 
 #home-jumbotron {
     margin-top: 25px;
-    font-family: Verdana, Geneva, sans-serif;   
     background: #85C226;
         h2 {
             margin-top: 15px;

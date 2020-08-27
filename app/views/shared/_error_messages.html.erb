@@ -1,7 +1,7 @@
 <% if @request.errors.any? %>
     <div id="error_explanation">
         <div class="alert alert-danger">
-            The form contains <%= pluralize(@request.errors.count, "error") %>.
+            В форме обнаружено <%= @request.errors.count%> ошибок.
         </div>
         <ul>     
             <% @request.errors.full_messages.each do |msg| %>
