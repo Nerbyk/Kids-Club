@@ -17,7 +17,6 @@
 
 body {
     padding-top: 20px;
-    font-family: "Comic Sans", cursive, sans-serif;
 }
 
 section {
@@ -46,6 +45,7 @@ h1 {
     font-size: 3em;
     letter-spacing: -2px;
     margin-bottom: 30px;
+    font-family: "Times New Roman", Times, serif;
 }
 
 h2 {
@@ -54,6 +54,7 @@ h2 {
     margin-bottom: 30px;
     font-weight: normal;
     color: $gray-light;
+    font-family: "Comic Sans", cursive, sans-serif;
 }
 h3 {
     width: 100%; 
@@ -68,6 +69,7 @@ h3 span {
 }
 
 p {
+    font-family: "Comic Sans", cursive, sans-serif;
     font-size: 1.1em;
     line-height: 1.7em;
 }
@@ -138,6 +140,19 @@ footer {
         }
     
 }
+ul.courses-list {
+    li {
+        color: white;
+        font-size: 18px;
+        list-style-type: none;
+        font-family: "Comic Sans", cursive, sans-serif; 
+        &:before{
+            content: "—";
+            position: relative;
+            left: -5px;
+        }
+    }
+}
 
 #home-grid {
     text-align: center;
@@ -167,6 +182,17 @@ footer {
     margin-top: 50px;
 }
 
+ul.social-buttons{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li { 
+       float: left;
+       margin-left: 5px; 
+    }
+}
+
 
 #request-new {
     margin-top: -50px;
@@ -176,6 +202,11 @@ footer {
     p {
         font-size: 20px;
         line-height: 1.3em;
+        font-family: "Times New Roman", Times, serif;
+        color: lightslategray;
+    }
+    h1 {
+        font-size: 45px;
     }
 
 }
@@ -210,6 +241,7 @@ input {
 
 #map-container {
     height: 400px;
+    width: 70%; 
     border-radius: 16px 16px;
     border-color: #fff;
     border-style: solid;
@@ -219,7 +251,7 @@ input {
   }
   #map-canvas {
     height: 384px;
-    width: 100%;
+    width: 50%;
   }
 
 
@@ -280,5 +312,9 @@ input {
             
             margin-left: 12%;
             margin-bottom: 40%;
+        }
+
+        #map-container {
+            width: 100%;
         }
 }  

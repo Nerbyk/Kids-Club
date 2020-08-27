@@ -4,28 +4,32 @@
     <div class="container"> 
     <hr>
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-8">
                 <h1>Контакты</h1>
                 <p>Наш адрес:</p>
                 <p>г. Новокуйбышевск пр.Победы 38а</p>
                 <p>Tел +7 967 762 66 63 и +7 927 604 50 50</p>
-                 <p>Часы работы: </p>
-                <%= link_to "https://vk.com/kids_klub_nsk", class: "btn btn-block btn-social btn-vk", id: 'social' do %>
-                    <span class="fa fa-vk"></span> Мы в ВКонтакте!
-                <% end %>
-                <%= link_to "https://www.instagram.com/kids_klub_nsk/", class: "btn btn-block btn-social btn-instagram", id: 'social' do %>
-                    <span class="fa fa-instagram"></span> Мы в Instagram!
-                <% end %>
+                 <p>Пн-Сб 9:00 - 20:00 Вс выходной</p>
+                 <ul class="social-buttons"> 
+                    <li>
+                        <%= link_to "https://vk.com/kids_klub_nsk", class: "btn btn-block btn-social btn-vk", id: 'social' do %>
+                            <span class="fa fa-vk"></span> Мы в ВКонтакте!
+                        <% end %>
+                    </li>
+                    <li>
+                        <%= link_to "https://www.instagram.com/kids_klub_nsk/", class: "btn btn-block btn-social btn-instagram", id: 'social' do %>
+                            <span class="fa fa-instagram"></span> Мы в Instagram!
+                        <% end %>
+                    </li>
+                </ul>
+
                 <%= render 'map' %>
 
-            </div>
-            <div class="col-sm-3">
-                <p></p>
             </div>
 
             <div class="col-sm-4" style="margin-top: 120px;">
                 
-                <p style="font-size: 25px;">Запишитесь на пробное занятие!</p>
+                <p style="font-size: 30px;">Запишитесь на пробное занятие!</p>
                <%= render 'requests/form'%>
                
             </div>
