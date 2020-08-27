@@ -43,9 +43,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 3em;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     margin-bottom: 30px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 h2 {
@@ -81,6 +81,7 @@ p {
     
     a {
         color: grey;
+        font-size: 17px;
         
         &:hover {
             color: lightseagreen;
@@ -160,7 +161,7 @@ ul.courses-list {
     img {
         padding: 15px 10px;
         object-fit: cover;
-        opacity: 0.7;
+        opacity: 0.85;
         &:hover{
             opacity: 1;
         }
@@ -202,7 +203,7 @@ ul.social-buttons{
     p {
         font-size: 20px;
         line-height: 1.3em;
-        font-family: "Times New Roman", Times, serif;
+        font-family: Verdana, Geneva, sans-serif;
         color: lightslategray;
     }
     h1 {
@@ -238,6 +239,77 @@ input {
     }
 }
 
+/* courses */ 
+
+#courses-jumbotron {
+    background-color: white; 
+    margin-top: -50px;
+    background: white;
+    color: black;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", cursive, sans-serif; 
+
+    h1{
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 19px;
+        line-height: 1.3em;
+        color: lightslategray;
+    }
+    p.acticle-style {
+        font-family: Verdana, Geneva, sans-serif;
+    }
+   ul {
+    font-size: 17px;
+    list-style-type: none;
+    color: lightslategray;
+   }
+    ul.check-mark{
+        list-style-type: none;
+        color: lightslategray;
+        li:before{
+            font-size: 20px;
+            color: lightseagreen;
+            content: '✔';
+            
+        }
+    }
+    ul.cross-mark{
+        list-style-type: none;
+        color: lightslategray;
+        li:before{
+            font-size: 20px;
+            color:red;
+            content: '✘';
+            
+        }
+    }
+    li.plus-mark{
+        list-style-type: none;
+        font-size: 19px;
+        line-height: 1.3em;
+        color: lightslategray;
+        &:before{
+            font-size: 20px;
+            color: green;
+            content: '✚';
+        }
+    }
+    a {
+        font-size: 17px;
+        color: darkcyan;
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+/* google map */
 
 #map-container {
     height: 400px;
@@ -255,7 +327,9 @@ input {
   }
 
 
-  
+
+  /* mobile */
+
   @media only screen and (max-width: 480px) {
 
     h1,h2, p { 
@@ -304,17 +378,17 @@ input {
             margin-left: 0;
             }
         }
-        .logo-image {
-            max-width: 90%;
-        }
+    .logo-image {
+        max-width: 90%;
+    }
 
-        .navbar-brand {
-            
-            margin-left: 12%;
-            margin-bottom: 40%;
-        }
+    .navbar-brand {
+        
+        margin-left: 12%;
+        margin-bottom: 40%;
+    }
 
-        #map-container {
-            width: 100%;
-        }
+    #map-container {
+        width: 100%;
+    }
 }  
