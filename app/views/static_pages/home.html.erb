@@ -55,8 +55,15 @@
 
 <div class="jumbotron" id="home-jumbotron" style="background: #08ADE5;">
     <div class="container">
-        <%= link_to "Записаться", request_path, id: 'application-button', type: "button", class:"btn btn-success btn-lg" %>
-        <h2>Запишитесь на пробное занятие</h2>
-        <p>Позвоните по телефону +7 927 604 50 50 или нажмите на кнопку «Записаться»</p>
+        <div class="row">
+            <div class="col-md-10">
+                <h2>Запишитесь на пробное занятие</h2>
+                <p>Позвоните по телефону +7 927 604 50 50 или нажмите на кнопку «Записаться»</p>
+            </div>
+            <div class="col-md-2">
+                <%= link_to "Записаться", request_path, id: 'application-button', type: "button", class:"btn btn-success btn-lg" %>
+            </div>
+        </div>
+        
     </div>
 </div>

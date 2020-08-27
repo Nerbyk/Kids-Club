@@ -1,23 +1,26 @@
-<header class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff">
+<header class="navbar navbar-expand-lg navbar-lights" style="background-color: #ffffff">
     <div class="container">
-        <%= link_to image_tag("logo.png", class: "logo-image", id: "logo"), root_path %>
+             <%= link_to image_tag("logo.png", class: "logo-image", id: "logo"), root_path, class: "navbar-brand" %>
             <nav>
+            <h2 id="phone-home">+7 (927) 604 50 50</h2>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed"
                             data-toggle="collapse"
                             data-target="#bs-example-navbar-collapse-1"
-                            aria-expanded="false">
+                            aria-expanded="false" id="toggle_button">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
+                    
                 </div>
-                <h2 style="text-align: right">+7 (927) 604 50 50</h2>
+                
                 <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
                     id="bs-example-navbar-collapse-1">
-                    <li><%= link_to "Главная Cтриница", root_path %></li>
-                    <li><%= link_to "Контакты", contacts_path %></li>
+                    <li class="nav-item"><%= link_to "Главная Cтриница", root_path, class: "nav-link"%></li>
+                    <li class="nav-item"><%= link_to "Контакты", contacts_path, class: "nav-link"%></li>
                 </ul>
-            </nav>
+            </nav>  
     </div>
 </header>

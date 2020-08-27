@@ -72,8 +72,8 @@ p {
 
 /* header */
 
-header {
-    margin-top: 20px;
+// header {
+    // margin-top: 20px;
     ul { 
         float: right;
         list-style: none;
@@ -89,12 +89,23 @@ header {
         &:hover {
             color: lightseagreen;
             text-decoration: none;
-            
         }
         
     }
-}
 
+    
+//}
+
+#phone-home {
+    text-align: right;  
+    font-size: 18px;
+    margin-right: 12px;
+}   
+
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: grey;
+}
 /* footer */ 
 footer {
     font-size: 15px;
@@ -108,7 +119,7 @@ footer {
 
 
 .logo-image{
-    max-width: 20%;
+    max-width: 25%;
     border-radius: 50%;
     overflow: hidden;
     margin-top: -6px;
@@ -160,8 +171,7 @@ footer {
 
 
 #application-button {
-    margin: 40px 20px;
-    float: right;
+    margin-top: 50px;
 }
 
 
@@ -173,10 +183,6 @@ footer {
     p {
         font-size: 20px;
         line-height: 1.3em;
-    }
-
-    #social{
-            width: 60%;   
     }
 
 }
@@ -211,7 +217,6 @@ input {
 
 #map-container {
     height: 400px;
-    width: 60%;
     border-radius: 16px 16px;
     border-color: #fff;
     border-style: solid;
@@ -223,3 +228,64 @@ input {
     height: 384px;
     width: 100%;
   }
+
+
+  
+  @media only screen and (max-width: 480px) {
+
+    h1,h2, p { 
+        text-align: center; 
+    }
+
+    #phone-home {
+        text-align: center;
+        margin-right: -10px;
+        font-size: 20px;
+    }
+
+
+    #application-button {
+        margin: 10px 0px 0px 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    #home-jumbotron {
+        padding-bottom: 50px;
+    }
+
+     header {
+         button{
+            margin: 0px 0px 0px 0px;
+            position: absolute;
+            top: 50%;
+            right: 30%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            
+         }
+     }  
+
+     ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+        margin: 50px;
+        li {   
+            float: none;
+            margin-left: 0;
+            }
+        }
+        .logo-image {
+            max-width: 90%;
+        }
+
+        .navbar-brand {
+            
+            margin-left: 12%;
+            margin-bottom: 40%;
+        }
+}  
