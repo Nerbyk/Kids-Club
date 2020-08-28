@@ -249,7 +249,9 @@ input {
     font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", cursive, sans-serif; 
 
     h1{
+        font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", cursive, sans-serif; 
         font-size: 35px;
+        color: lightslategray;
     }
     h2 {
         font-size: 21px;
@@ -305,6 +307,32 @@ input {
         color: darkcyan;
         &:hover {
             color: green;
+        }
+    }
+
+    .article-photo{
+        float: left;
+        width:  60%;
+        height: 60%;
+        padding-right: 15px;
+        background-size: cover;
+        &.min-width{
+            width:  35%;
+            height: 35%;
+        }
+        &.full {
+            float: none;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:  60%;
+            height: 60%;
+            padding-right: 15px 0px;
+            background-size: cover;
+            &.full{
+                width:  100%;
+                height: 100%;
+            }
         }
     }
 }
@@ -390,5 +418,8 @@ input {
 
     #map-container {
         width: 100%;
+    }
+    .article-photo{
+        display: none;
     }
 }  
