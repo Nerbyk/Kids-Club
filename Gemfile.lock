@@ -234,6 +234,7 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    underscore-rails (1.8.3)
     web-console (4.0.2)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -285,6 +286,7 @@ DEPENDENCIES
   sqlite3 (= 1.4.2)
   telegram-bot
   turbolinks (= 5.2.1)
+  underscore-rails
   web-console (= 4.0.2)
   webdrivers (= 4.3.0)
   webpacker (= 4.2.2)

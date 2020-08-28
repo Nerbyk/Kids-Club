@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get '/preparing_for_school', to: "courses#course7"
   get '/camp_on_holidays', to: "courses#course8"
   get '/mental_arithmetic', to: "courses#course9"
+
   resources :requests
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

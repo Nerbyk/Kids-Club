@@ -15,6 +15,7 @@ gem 'bootstrap-social-rails'
 gem 'telegram-bot'
 gem 'gmaps4rails'
 gem 'rails-i18n'
+gem 'underscore-rails'
 
 
 

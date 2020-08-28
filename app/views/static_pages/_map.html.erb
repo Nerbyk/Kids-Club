@@ -1,35 +1,20 @@
 <div id="map-container">
-  <div id="map-canvas"></div>
+  <div id="map-canvas" class="map">
+    
+    <script>
+    $('.map')
+      .gmap3({
+        center:[48.8620722, 2.352047],
+        zoom:4
+      })
+      .marker([
+        {position:[48.8620722, 2.352047]},
+        {address:"86000 Poitiers, France"},
+        {address:"66000 Perpignan, France", icon: "https://maps.google.com/mapfiles/marker_grey.png"}
+      ])
+      .on('click', function (marker) {
+        marker.setIcon('https://maps.google.com/mapfiles/marker_green.png');
+      });
+  </script>
+  </div>
 </div>
-
-<script type="text/javascript">  
-handler = Gmaps.build('Google');
-handler.buildMap(
-  {
-    provider: {
-      disableDefaultUI: true,
-      key: "AIzaSyBDONZtS4DEHHGWcwLM9zS4NMcJ6rxx4ZQ"
-      // here you can pass other Google Maps API options here
-    },
-    internal: {
-      id: 'map'
-    }
-  },
-  function() {
-    markers = handler.addMarkers([
-      {
-        "lat": 0,
-        "lng": 0,
-        "picture": {
-          "url": "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png",
-          "width":  36,
-          "height": 36
-        },
-        "infowindow": "hello!"
-      }
-    ]);
-    handler.bounds.extendWith(markers);
-    handler.fitMapToBounds();
-  }
-);
-</script>
