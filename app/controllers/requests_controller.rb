@@ -5,7 +5,9 @@ class RequestsController < ApplicationController
 
   def create 
     @request = Request.new(request_params)
+    
     if @request.save 
+      @id = Request.last.id.to_s
       flash[:info] = "Заявка была отправлена"
       send_to_telegram
       redirect_to root_path
@@ -21,7 +23,7 @@ class RequestsController < ApplicationController
   end
 
   def send_to_telegram
-    message = generate_message(request_params)
+    message = generate_message(request_params, @id)
     Telegram.bot.send_message(chat_id: ENV['TELEGRAM_RECEIVER_ID'], text: message)
   end
 end
