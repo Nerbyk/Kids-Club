@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get '/preparing_for_school', to: "courses#course7"
   get '/camp_on_holidays', to: "courses#course8"
   get '/mental_arithmetic', to: "courses#course9"
-
+  get "/sitemap.xml", to: "sitemap#show", format: "xml", as: :sitemap
   resources :requests
 end
